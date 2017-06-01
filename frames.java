@@ -19,6 +19,7 @@ public class frames {
 		FirefoxDriver fd = new FirefoxDriver();
 		fd.get("https://paytm.com/");
 		fd.manage().window().maximize();
+		System.out.println("adding to git");
 		fd.findElement(By.xpath("//div[@class='_3ac-']")).click();
 		WebElement frm = fd.findElement(By.xpath("//iframe[@src='/v1/api/login?isIframe=true&theme=mp-web']"));
 		fd.switchTo().frame(frm);
